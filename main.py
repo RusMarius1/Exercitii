@@ -1,14 +1,14 @@
 def xor_pyramid(bottom_row):
 current_row = bottom_row
    while len(current_row) > 1:
- next_row = [current_row[i] ^ current_row[i + 1] for i in range(len(current_row) - 1)]
- next_row.append(current_row[-1])
- current_row = next_row
-return current_row[0]
-for i in range(n):
-   value = int(input(f"Introduceti valoarea {i + 1}: "))
-bottom_row.append(value)
-top_value = xor_pyramid(bottom_row)
+      next_row = [current_row[i] ^ current_row[i + 1] for i in range(len(current_row) - 1)]
+      next_row.append(current_row[-1])
+      current_row = next_row
+   return current_row[0]
+   for i in range(n):
+      value = int(input(f"Introduceti valoarea {i + 1}: "))
+      bottom_row.append(value)
+      top_value = xor_pyramid(bottom_row)
 print(f"Valoarea din varf este: {top_value}")
 
 
